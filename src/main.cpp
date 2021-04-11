@@ -28,10 +28,6 @@ int main()
         .maybe_double = "=&|"
     }};
 
-    auto const comp_token = [](Token const& l, Token const& r) {
-        return l.value == r.value;
-    };
-
     std::cout << "Parser<Token> REPL\n"
               << "Enter input (blank to quit):\n";
 
